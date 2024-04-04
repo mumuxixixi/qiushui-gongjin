@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <title>登陆界面</title>
+
+<style>
+    h3{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+        }
+    
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: microsoftyahei;
+            font-weight: bolder;
+            
+            background-image: url(http://m.qpic.cn/psc?/V52mgwgg0WS2FL1dZA7w2jBpOY2cXNyK/ruAMsa53pVQWN7FLK88i5kemjPJLnuRR5sRTCx5*r7x04hCI7JOVBo37MsiZdZgg01SjEbZQXTh06QhivNS4o0lq4gBLthg6afzEMZtBduU!/b&bo=eAM1B3gDNQcBByA!&rf=viewer_4);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            text-align: center;
+            background-size: cover;
+        }
+
+        .box {
+            position: absolute;
+            top: 30%;
+            left: 25%;
+            transform: translate(-20%, -50%);
+            width: 300px;
+            padding: 20px;
+            background: rgba(10, 9, 4, 0.5);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+        }
+
+        .box .inputbox {
+            position: relative;
+        }
+
+        .box .inputbox input {
+            width: 80%;
+            padding: 10px 0;
+            font-size: 15px;
+            color: black;
+            margin-bottom: 5px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+
+        .box .input label {
+            position: relative;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            font-size: 16px;
+            font-style: normal;
+            color: blanchedalmond;
+            pointer-events: none;
+            /* transform: 1s; */
+            text-align: center;
+        }
+
+        .box .inputbox button {
+            border: solid 4px transparent;
+            border-image: linear-gradient(to right, rgb(11, 60, 61), transparent);
+            border-image-slice: 1;
+            font-family: kaiti;
+        }
+
+        .box .inputbox button:hover {
+            color: white;
+            background-image: linear-gradient(to right, orangered, transparent);
+            border-right: none;
+        }
+
+        .box .inputbox1 span{
+            font-size: small;
+            font-family: kaiti;
+            font-weight: 50px;
+        }
+        #tiaozhuan{
+            text-decoration: none;
+            color: black;
+        }
+
+</style>
+
+</head>
+<body>
+    
+    <h3>登陆界面</h3>
+    <hr>
+
+    <form class="">
+        <h4>welcome to my world!</h4>
+
+    <div class="box">
+        <div class="inputbox">
+            <label for="user">账户：</label>
+            <input type="text" id="username" placeholder="请输入账号" value="">
+        </div>
+
+        <div class="inputbox">
+            <label for="pwd">密码：</label>
+            <input type="password" id="pwd" placeholder="请输入密码" value="">
+        </div>
+
+        <div class="inputbox1">
+            <input type="checkbox" id="chk">
+            <span id="span">我会记住你的</span>
+        </div>
+
+        <div class="inputbox">
+            <button id="denglu"><a id="tiaozhuan" href="##">登录</a></button>
+            <button id="quxiao">取消</button>
+        </div>
+    </div>
+    </form>
+
+    <script>
+
+    var username = document.getElementById("username");
+    var pwd = document.getElementById("pwd");
+    var btn1 = document.getElementById("denglu");
+    var a = document.getElementById("tiaozhuan");
+
+        btn1.onclick = function () {
+                switch (username.value && pwd.value) {
+                    case "" , "" :
+                        alert("请按要求输入")
+                        break;
+                        case "gongjin" , "1018" :
+                            alert("欢迎");
+                            a.href="https://mumuxixixi.github.io/qiushui/";
+                        break;
+                    case "user" , "123456" :
+                        alert("欢迎");
+                        break;
+                    default:
+                        alert("滚");
+                }
+        }
+
+    </script>
+
+</body>
+</html>
